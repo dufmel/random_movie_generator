@@ -1,4 +1,4 @@
-🎥 Welcome to the Random Movie Generator! 🎞️
+🎥 Welcome to the Random Flick Generator! 🎞️
 
 Follow these simple steps to get started:
 
