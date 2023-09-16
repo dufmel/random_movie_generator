@@ -28,7 +28,7 @@ function displayMovies(movies) {
     const platform = movie[2]
     
     const movieElement = document.createElement('p');
-    movieElement.textContent = 'Time to watch a ' + category + " called: " + title + ' on ' + platform + " platform. Enjoy!";
+    movieElement.textContent = 'Time to watch a ' + category + " called: " + '"' + title + '"' + ' on ' + platform + " platform. Enjoy!";
     
     movieList.appendChild(movieElement);
   });
