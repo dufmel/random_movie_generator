@@ -24,11 +24,11 @@ function displayMovies(movies) {
   
   movies.forEach(function(movie) {
     const title = movie[0];
-    const category = movie[1];
+    const category = movie[1].toLowerCase();
     const platform = movie[2]
     
     const movieElement = document.createElement('p');
-    movieElement.textContent = 'Time to watch a ' + category + " called: " + '"' + title + '"' + ' on ' + platform + " platform. Enjoy!";
+    movieElement.textContent = 'Time to watch a ' + category + " flick called " + '"' + title + '"' + ' on ' + platform + ". Grab some popcorn and enjoy!";
     
     movieList.appendChild(movieElement);
   });
