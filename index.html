@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Random Flick Finder</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-   </head>
-   <body>
-      <h1>Random Movie Generator</h1>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-         <input type="hidden" name="business" value="LC6LLZHC84Z2E" />
-         <input type="hidden" name="no_recurring" value="0" />
-         <input type="hidden" name="item_name" value="Thank you for visiting the site! Your generous donation helps us maintain the site." />
-         <input type="hidden" name="currency_code" value="USD" />
-         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-         <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-      <hr>
-      <img src="randomMovie.png" alt="Random Movie" />
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">&#x1F3A5; Welcome to the Random Flick Finder! &#x1F39E; </span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">Follow these simple steps to get started:</span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">1&#xFE0F;&#x20E3; Create an Excel/Google Doc sheet(in .xslx file format) with a list of the movies you want to see, including their titles, categories, and viewing platform.</span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">2&#xFE0F;&#x20E3; Enter the movie details without specifying the category titles.</span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">3&#xFE0F;&#x20E3; Upload the file, then click on "parse" to process the data.</span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">4&#xFE0F;&#x20E3; Finally, click on "generate random movie" to enjoy your selection!</span>
-      </p>
-      <p style="text-align: center;">
-         <span style="font-size: 16px;">Sit back, relax, and let the Random Movie Generator choose the perfect movie for you. &#x1F37F;&#x2B50;</span>
-      </p>
-      <hr>
-      <input type="file" id="file-input">
-      <button id="parse-btn">Parse</button>
-      <div id="movie-list"></div>
-      <button id="random-movie-btn" class="hidden">Generate Random Movie</button>
-      <p id="random-movie"></p>
-      <script src="script.js"></script>
-      <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
-   </body>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRSN9HS4TW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YRSN9HS4TW');
+  </script>
+  <title>Random Flick Finder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Random Movie Generator</h1>
+  <form action="https://www.paypal.com/donate" method="post" target="_top">
+    <input type="hidden" name="business" value="LC6LLZHC84Z2E" />
+    <input type="hidden" name="no_recurring" value="0" />
+    <input type="hidden" name="item_name"
+      value="Thank you for visiting the site! Your generous donation helps us maintain the site." />
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit"
+      title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+  <hr>
+  <img src="randomMovie.png" alt="Random Movie" />
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">&#x1F3A5; Welcome to the Random Flick Finder! &#x1F39E; </span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">Follow these simple steps to get started:</span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">1&#xFE0F;&#x20E3; Create an Excel/Google Doc sheet(in .xslx file format) with a list
+      of the movies you want to see, including their titles, categories, and viewing platform.</span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">2&#xFE0F;&#x20E3; Enter the movie details without specifying the category
+      titles.</span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">3&#xFE0F;&#x20E3; Upload the file, then click on "parse" to process the data.</span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">4&#xFE0F;&#x20E3; Finally, click on "generate random movie" to enjoy your
+      selection!</span>
+  </p>
+  <p style="text-align: center;">
+    <span style="font-size: 16px;">Sit back, relax, and let the Random Movie Generator choose the perfect movie for you.
+      &#x1F37F;&#x2B50;</span>
+  </p>
+  <hr>
+  <input type="file" id="file-input">
+  <button id="parse-btn">Parse</button>
+  <div id="movie-list"></div>
+  <button id="random-movie-btn" class="hidden">Generate Random Movie</button>
+  <p id="random-movie"></p>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+</body>
+
 </html>
